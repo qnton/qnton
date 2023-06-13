@@ -1,0 +1,21 @@
+---
+import "../styles/globals.css";
+import Header from "./header.astro";
+import Footer from "./footer.astro";
+import Head from "./head.astro";
+import "../styles/globals.css";
+
+const { title, page } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <Head title={title} />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <Header page={page} />
+    <slot />
+    <Footer page={page} />
+  </body>
+</html>
