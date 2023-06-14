@@ -13,7 +13,7 @@ updates:
       - "dependencies"
 
   - package-ecosystem: 'npm'
-    directory: '/'
+    directory: '/website'
     schedule:
       interval: 'daily'
     labels:
