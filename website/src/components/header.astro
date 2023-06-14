@@ -2,8 +2,8 @@
 const { page } = Astro.props;
 ---
 
-<header>
-  <div class="group fixed left-10 top-16 text-3xl">
+<header class="fixed z-50">
+  <div class="group fixed left-10 top-16 animate-fade text-3xl animate-once">
     <a
       href={page === "index" ? "#" : "/"}
       class="cursor-pointer opacity-50 transition-opacity duration-300 hover:!opacity-100 group-hover:opacity-25"
@@ -11,7 +11,7 @@ const { page } = Astro.props;
       Anton Werschinin
     </a>
   </div>
-  <nav class="z-50 animate-fade animate-once">
+  <nav class="animate-fade animate-once">
     <ul class="group fixed right-10 top-16 flex gap-6 text-3xl">
       <li
         class="cursor-pointer opacity-50 transition-opacity duration-300 hover:!opacity-100 group-hover:opacity-25"
